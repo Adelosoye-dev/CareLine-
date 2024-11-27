@@ -218,8 +218,10 @@ export default function Component() {
 
         {/* Why Trust Us Section */}
         <section ref={aboutRef} className="bg-blue-50 py-20 scroll-mt-24">
+        <h2 className="text-2xl font-bold mb-10 md:text-[78px] px-3 md:px-10 ">Why Choose Us?</h2>
           <div className="container mx-auto px-4 flex flex-col md:flex-row w-full items-center justify-center">
             <div className="mb-10 md:mb-0 flex flex-col md:flex-row justify-center relative gap-8 md:gap-[100px]">
+              <div className="flex flex-col items-center">
               <div className="w-full md:w-[503px] h-[300px] md:h-[527px] bg-white rounded-full overflow-hidden shadow-lg flex items-center justify-center">
                 <Image
                   src="/choose-us.png"
@@ -229,9 +231,12 @@ export default function Component() {
                   className="w-full h-full object-cover"
                 />
               </div>
+              <button className="text-black md:text-[48px] self-center mt-20 mx-auto text-2xl font-bold hover:opacity-40">Learn More</button>
+              </div>
+
               <div className="py-8 md:py-[100px]">
-                <h2 className="text-3xl font-bold mb-2">Why Choose Us?</h2>
-                <h3 className="text-2xl font-semibold mb-6 md:text-[48px] md:leading-[58px]">
+                
+                <h3 className="text-3xl mb-6  md:leading-[58px] font-bold">
                   Your Trusted Partner In <br /> Remote Healthcare.
                 </h3>
                 <ul className="space-y-4">
@@ -244,7 +249,7 @@ export default function Component() {
                       24/7 Availability Of <br /> Certified Professionals
                     </span>
                   </li>
-                  <li className="flex items-center text-2xl md:text-[48px] md:leading-[58px] space-x-2 group bg-gray-100 p-4 md:p-8 rounded-md md:-ml-[25%]">
+                  <li className="flex items-center text-2xl md:text-[48px] md:leading-[58px] space-x-2 group bg-gray-100 p-4 md:p-8 rounded-md">
                     <Dot
                       size={48}
                       className="text-black group-hover:scale-110 transition-transform duration-300"
@@ -253,13 +258,22 @@ export default function Component() {
                       Convenient Access For <br /> The Whole Family
                     </span>
                   </li>
-                  <li className="flex items-center text-2xl md:text-[48px] md:leading-[58px] space-x-2 group bg-gray-100 p-4 md:p-8 rounded-md md:-ml-[50%]">
+                  <li className="flex items-center text-2xl md:text-[48px] md:leading-[58px] space-x-2 group bg-gray-100 p-4 md:p-8 rounded-md ">
                     <Dot
                       size={48}
                       className="text-black group-hover:scale-110 transition-transform duration-300"
                     />
                     <span className="group-hover:translate-x-1 transition-transform duration-300">
                       Affordable And Secure <br /> Services
+                    </span>
+                  </li>
+                  <li className="flex items-center text-2xl md:text-[48px] md:leading-[58px] space-x-2 group bg-gray-100 p-4 md:p-8 rounded-md ">
+                    <Dot
+                      size={48}
+                      className="text-black group-hover:scale-110 transition-transform duration-300"
+                    />
+                    <span className="group-hover:translate-x-1 transition-transform duration-300">
+                      Personalised care <br /> plans.
                     </span>
                   </li>
                 </ul>
@@ -431,7 +445,6 @@ export default function Component() {
             <div className="flex gap-4 flex-col min-w-[35%]">
               <p className="text-xl font-bold mt-10">Follow Us</p>
               <div className="space-x-2 flex">
-                
                 <a
                   href="#"
                   aria-label="Facebook"
@@ -456,15 +469,15 @@ export default function Component() {
               </div>
             </div>
             <div className="flex lg:justify-start lg:gap-20 lg:grow flex-col lg:flex-row gap-4 items-start">
-            <a href="#" className="text-black text-xl font-bold">
-              Privacy Policy
-            </a>
-            <a href="#" className="text-black text-xl font-bold">
-              Terms Of Service
-            </a>
-            <a href="#" className="text-black text-xl font-bold">
-              Cookie Policy
-            </a>
+              <a href="#" className="text-black text-xl font-bold">
+                Privacy Policy
+              </a>
+              <a href="#" className="text-black text-xl font-bold">
+                Terms Of Service
+              </a>
+              <a href="#" className="text-black text-xl font-bold">
+                Cookie Policy
+              </a>
             </div>
           </div>
         </div>
